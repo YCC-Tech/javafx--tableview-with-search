@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TableView fx:id="tableview" layoutX="19.0" layoutY="89.0" prefHeight="357.0" prefWidth="687.0">
+        <columns>
+         
+          <TableColumn fx:id="EmpID" prefWidth="85.0" text="No" />
+          <TableColumn fx:id="empName" prefWidth="157.0" text=" Name" />
+            <TableColumn fx:id="empEmail" prefWidth="167.0" text=" Email ID" />
+            <TableColumn fx:id="department" prefWidth="155.0" text="Department" />
+            <TableColumn fx:id="salary" prefWidth="116.0" text="Salary" />
+        </columns>
+      </TableView>
+      <TextField fx:id="filterField" layoutX="511.0" layoutY="52.0" prefHeight="25.0" prefWidth="195.0" promptText="Search . . ." style="-fx-background-color: #E5E7E9;" />
+      <Label layoutX="19.0" layoutY="16.0" text="TableView with Search Filter" textFill="#070101">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
